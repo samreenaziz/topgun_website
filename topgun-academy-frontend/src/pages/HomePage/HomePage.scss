@@ -1,20 +1,109 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/typography" as *;
+
 
 main{
     display:flex;
     flex-direction: column;
 }
 
-.home_title{
-    font-family:"roboto-slab";
-    font-weight: 500;
+.landing{
     margin-bottom: 0rem;
+    background-image: linear-gradient(to bottom, rgb(47 79 79), rgb(255 189 89 / 31%)), url(/src/assets/photos/landing_banner.jpg);
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    margin-top: 0rem;
+    height: 45rem;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 6rem;
+    padding-right: 8rem;
+    padding-top: 8rem;
+    margin-top:8rem;
+
+    &_ohep-logo{
+        display: flex;
+        flex-direction: row;
+        height:10rem;
+        width: 10rem;
+        align-items: center;
+    }
+
+    &_title{
+        font-family: "roboto-slab";
+        font-weight: 500;
+        margin-bottom: 0rem;
+        color: white;
+        height: 18rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-left: 6rem;
+        padding-right: 8rem;
+        font-size: 4rem;
+    }
+
+    &_register-button{
+        padding: 0.25rem;
+        border-radius: 1.25rem;
+        font-weight: 400;
+        font-size: 0.8;
+        cursor: pointer;
+    }
+
+    &_information--section{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        background-color: #ffbd5914;
+        margin-right: -0.50rem;
+        margin-left: -0.50rem;
+        padding-bottom: 3rem;
+        align-items: center;
+
+        &-title-logo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 4rem;
+        }
+
+        &-title{
+            color: $primary-green;
+            font-family: "roboto-slab";
+            display: flex;
+            flex-direction: column;
+            width: 43%;
+            height: 6rem;
+            margin-left: 7rem;
+            margin-right: 8rem;
+            display: flex;
+            align-items: center;
+            font-size: 3rem;
+            &:hover{
+                color: $primary-orange;
+            }
+        }
+
+        &-content{
+            color: $primary-green;
+            font-family: "roboto-regular";
+            font-weight: 400;
+            font-size: 1.25rem;
+            padding-right: 6rem;
+            padding-top: 3rem;
+        }
+    }
 }
 
-.home_intro{
+.landing_intro{
     &-para{
         font-family: "roboto-regular";
         font-weight: 700;
+        text-align: justify;
 
         &--side-note{
             font-family: "roboto-regular";
@@ -22,9 +111,14 @@ main{
             margin-left: 1.5rem;
             border-left: 2px solid black;
             padding-left: 1rem;
+            text-align: justify;
+
         }
     }
 
 }
+
+
+
 
 

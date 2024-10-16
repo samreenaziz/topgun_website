@@ -6,6 +6,12 @@
 
 @font-face{
     font-family:'roboto-regular';
-    src: url("../../assets/fonts/roboto/Roboto-Medium.ttf")format("truetype");
-    font-weight: 700;
+    src: url("../../assets/fonts/roboto-regular/Roboto-Regular.ttf")format("truetype");
+    font-weight: 400;
+}
+
+@font-face{
+    font-family:'roboto-regular';
+    src: url("../../assets/fonts/roboto-regular/Roboto-Medium.ttf")format("truetype");
+    font-weight: 600;
 }
