@@ -1,0 +1,30 @@
+@use "../../styles/partials/typography" as *;
+
+main{
+    display:flex;
+    flex-direction: column;
+}
+
+.home_title{
+    font-family:"roboto-slab";
+    font-weight: 500;
+    margin-bottom: 0rem;
+}
+
+.home_intro{
+    &-para{
+        font-family: "roboto-regular";
+        font-weight: 700;
+
+        &--side-note{
+            font-family: "roboto-regular";
+            font-weight: 700;
+            margin-left: 1.5rem;
+            border-left: 2px solid black;
+            padding-left: 1rem;
+        }
+    }
+
+}
+
+
