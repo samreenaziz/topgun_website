@@ -32,7 +32,7 @@ const HomePage = () =>{
 
                     <div className = "landing_information--section-content">
                         <p className = "landing_intro-para">
-                        We are an official provider designated by the Chief Firearms Office (CFO)
+                        Located in Scarborough, Ontario at Morningside & Sheppard, we are an official provider designated by the Chief Firearms Office (CFO)
                         to teach and examine the <b className = "landing_intro--para">Canadian Firearm Safety Course (CFSC)</b>
                         for <u>Non-Restricted Firearms</u> and the <b>Canadian Restricted Firearms Safety Course (CRFSC) </b> for <u>Restricted Firearms</u>.
                         </p>
