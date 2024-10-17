@@ -3,6 +3,7 @@ import { TextField, Button, Typography, FormControl, InputLabel, Select, MenuIte
 import { motion, useScroll, useAnimate } from "framer-motion"
 import OHEPLogo from '../../assets/logos/OHEP.png'
 import CardFlip from "../../components/CardFlip/CardFlip"
+import BookeoWidget from "../../components/BookeoWidget/BookeoWidget"
 
 
 const HomePage = () =>{
@@ -17,16 +18,16 @@ const HomePage = () =>{
                     </h2>
                 </motion.div>
                 <div className = "landing_register-button-desktop">
-                        <Button className = "action-button" sx={{backgroundColor: 'rgb(73 54 47)', fontSize:"1.5rem", borderRadius: "0.25rem", height:"5rem", width: "25rem",  '&:hover': {backgroundColor: '#ffbd59', color: 'rgb(73 54 47)'}}} variant="contained" textTransform= 'none' type="submit">register</Button>
+                        <Button className = "action-button" sx={{backgroundColor: 'rgb(73 54 47)', fontSize:"1.5rem", borderRadius: "0.25rem", height:"5rem", width: "25rem",  '&:hover': {backgroundColor: '#ffbd59', color: 'rgb(73 54 47)'}}} variant="contained" type="submit">register</Button>
                 </div>
                 <div className = "landing_register-button-desktop">
-                    <a href="#about-sec" style={{ fontWeight: 'bold', textDecoration: 'none' }}><Button className = "action-button" sx={{backgroundColor: 'rgb(73 54 47)', fontSize:"1rem", borderRadius: "0.25rem", width:"25rem", height: "3rem", marginTop: "1rem", '&:hover': {backgroundColor: '#2f4f4f', color: '#fff'}}} variant="contained" textTransform= 'none' type="submit">Learn More</Button></a>
+                    <a href="#about-sec" style={{ fontWeight: 'bold', textDecoration: 'none' }}><Button className = "action-button" sx={{backgroundColor: 'rgb(73 54 47)', fontSize:"1rem", borderRadius: "0.25rem", width:"25rem", height: "3rem", marginTop: "1rem", '&:hover': {backgroundColor: '#2f4f4f', color: '#fff'}}} variant="contained"  type="submit">Learn More</Button></a>
                 </div>
                 <div className = "landing_register-button-mob-tab">
-                        <Button className = "action-button" sx={{backgroundColor: 'rgb(73 54 47)', fontSize:"1rem", borderRadius: "0.25rem", height:"3rem", width: "10rem",  '&:hover': {backgroundColor: '#ffbd59', color: 'rgb(73 54 47)'}}} variant="contained" textTransform= 'none' type="submit">register</Button>
+                        <Button className = "action-button" sx={{backgroundColor: 'rgb(73 54 47)', fontSize:"1rem", borderRadius: "0.25rem", height:"3rem", width: "10rem",  '&:hover': {backgroundColor: '#ffbd59', color: 'rgb(73 54 47)'}}} variant="contained" type="submit">register</Button>
                 </div>
                 <div className = "landing_register-button-mob-tab">
-                    <a href="#about-sec" style={{ fontWeight: 'bold', textDecoration: 'none' }}><Button className = "action-button" sx={{backgroundColor: 'rgb(73 54 47)', fontSize:"0.75rem", borderRadius: "0.25rem", width:"8rem", height: "2rem", marginTop: "1rem", '&:hover': {backgroundColor: '#2f4f4f', color: '#fff'}}} variant="contained" textTransform= 'none' type="submit">Learn More</Button></a>
+                    <a href="#about-sec" style={{ fontWeight: 'bold', textDecoration: 'none' }}><Button className = "action-button" sx={{backgroundColor: 'rgb(73 54 47)', fontSize:"0.75rem", borderRadius: "0.25rem", width:"8rem", height: "2rem", marginTop: "1rem", '&:hover': {backgroundColor: '#2f4f4f', color: '#fff'}}} variant="contained" type="submit">Learn More</Button></a>
                 </div>
             </div>
 
@@ -138,7 +139,9 @@ const HomePage = () =>{
                     Ready to register? Check out our dates and book your spot now:
                 </div>
             </motion.div>
-            <script type="text/javascript" src="https://bookeo.com/widget.js?a=315079MCLT182C22AFE81"></script>
+            <div>
+                <BookeoWidget />
+            </div>
 
         </main>
 

@@ -24,11 +24,17 @@ main{
     padding-top: 3rem;
     margin-top:7rem;
 
+    @include tablet{
+        margin-top:10rem;
+    }
+
     @include desktop{
         padding-left: 6rem;
         padding-right: 8rem;
         padding-top: 8rem;
         height: 45rem;
+        margin-top:10rem;
+
 
     }
 
