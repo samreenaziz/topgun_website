@@ -14,15 +14,24 @@ main{
     margin-left: -0.5rem;
     margin-right: -0.5rem;
     margin-top: 0rem;
-    height: 45rem;
+    height: 23rem;
     background-size: cover;
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-left: 6rem;
-    padding-right: 8rem;
-    padding-top: 8rem;
-    margin-top:8rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    padding-top: 3rem;
+    margin-top:7rem;
+
+    @include desktop{
+        padding-left: 6rem;
+        padding-right: 8rem;
+        padding-top: 8rem;
+        height: 45rem;
+
+    }
+
 
     &_ohep-logo{
         display: flex;
@@ -37,32 +46,70 @@ main{
         font-weight: 500;
         margin-bottom: 0rem;
         color: white;
-        height: 18rem;
+        height: 10rem;
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding-left: 6rem;
-        padding-right: 8rem;
-        font-size: 4rem;
+        font-size: 2rem;
+
+        @include tablet{
+            padding-top: 3rem;
+        }
+
+        @include desktop{
+            height: 18rem;
+            font-size: 4rem;
+            padding-left: 6rem;
+            padding-right: 8rem;
+        }
     }
 
-    &_register-button{
+    &_register-button-desktop{
         padding: 0.25rem;
         border-radius: 1.25rem;
         font-weight: 400;
         font-size: 0.8;
         cursor: pointer;
+
+        @include mobile{
+            display: none;
+        }
+
+        @include tablet{
+            display: none;
+        }
+
+        @include desktop{
+            display:flex;
+            justify-content: center;
+        }
+    }
+
+    &_register-button-mob-tab{
+        padding: 0.25rem;
+        border-radius: 1.25rem;
+        font-weight: 400;
+        font-size: 0.8;
+        cursor: pointer;
+
+        @include desktop{
+            display: none;
+        }
     }
 
     &_information--section{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content:space-between;
         background-color: #ffbd5914;
         margin-right: -0.50rem;
         margin-left: -0.50rem;
         padding-bottom: 3rem;
         align-items: center;
+
+        @include desktop{
+            flex-direction: row;
+        }
 
         &-title-logo{
             display: flex;
@@ -76,15 +123,18 @@ main{
             font-family: "roboto-slab";
             display: flex;
             flex-direction: column;
-            width: 43%;
-            height: 6rem;
-            margin-left: 7rem;
-            margin-right: 8rem;
             display: flex;
             align-items: center;
             font-size: 3rem;
             &:hover{
                 color: $primary-orange;
+            }
+
+            @include desktop{
+                margin-left: 7rem;
+                margin-right: 8rem;
+                width: 43%;
+                height: 6rem;
             }
         }
 
@@ -93,8 +143,16 @@ main{
             font-family: "roboto-regular";
             font-weight: 400;
             font-size: 1.25rem;
-            padding-right: 6rem;
-            padding-top: 3rem;
+            padding: 0rem 1rem;
+
+            @include tablet{
+                padding: 0rem 6rem;
+            }
+
+            @include desktop{
+                padding-right: 6rem;
+                padding-top: 3rem;
+            }
         }
     }
 }
@@ -104,6 +162,7 @@ main{
         font-family: "roboto-regular";
         font-weight: 700;
         text-align: justify;
+        line-height: 1.75rem;
 
         &--side-note{
             font-family: "roboto-regular";
@@ -115,6 +174,57 @@ main{
 
         }
     }
+
+}
+
+.fact-single-td{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "roboto-slab";
+    font-weight: 700;
+    font-size: 4rem;
+    color: $primary-green;
+    padding: 2.5rem 0rem;
+    line-height: 5rem;
+
+    @include mobile{
+        display: none;
+    }
+}
+
+.fact-single-mobile{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "roboto-slab";
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: $primary-green;
+    line-height: 3rem;
+
+    @include tablet{
+        display: none;
+    }
+}
+
+
+.ohep--card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 3rem 0rem;
+    justify-content: center;
+
+    @include mobile{
+        margin-top: 0rem;
+    }
+
+    @include tablet{
+        margin-top: 0rem;
+    }
+
 
 }
 

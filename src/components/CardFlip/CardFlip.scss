@@ -1,0 +1,58 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+  }
+
+.card-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+  .card {
+    width: 15rem;
+    height: 10rem;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    transform-origin: center;
+  }
+
+  .card-front,
+  .card-back {
+    position: absolute;
+    height: 100%;
+    width: 12rem;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+
+  }
+
+  .card-front {
+    background-color: #ffbd59;
+    color: black;
+    cursor: pointer;
+    font-family: "roboto-slab";
+    font-size: 1.10rem;
+
+    &:hover{
+        background-color: $primary-green;
+        color: $primary-white;
+    }
+  }
+
+  .card-back {
+    background-color: #ffbd59;
+    color: black;
+    transform: rotateY(-180deg);
+    cursor: pointer;
+
+  }

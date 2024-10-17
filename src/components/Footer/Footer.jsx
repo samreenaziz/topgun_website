@@ -2,8 +2,8 @@ import './Footer.scss'
 
 const Footer = () =>{
     return (
-        <div className = "nav">
-            Hi
+        <div className = "footer">
+            Contact Us
         </div>
     )
 }
