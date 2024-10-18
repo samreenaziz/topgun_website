@@ -151,16 +151,16 @@ const HomePage = () =>{
 export default HomePage;
 
 
-<iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.6485342792344!2d-79.20328261095344!3d43.80090556834778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d1a855f331bb%3A0x7c0b7e22a61976a7!2sTop%20Gun%20Firearms%20Academy!5e0!3m2!1sen!2sca!4v1729134464756!5m2!1sen!2sca"
-                            width="600"
-                            height="450"
-                            style={{ border: 0 }}
-                            allowFullScreen
-                            loading="lazy"
-                            aria-label="Google Map of Top Gun Firearms Academy"
-                            referrerPolicy="no-referrer-when-downgrade"
-                        />
+// <iframe
+//                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.6485342792344!2d-79.20328261095344!3d43.80090556834778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d1a855f331bb%3A0x7c0b7e22a61976a7!2sTop%20Gun%20Firearms%20Academy!5e0!3m2!1sen!2sca!4v1729134464756!5m2!1sen!2sca"
+//                             width="600"
+//                             height="450"
+//                             style={{ border: 0 }}
+//                             allowFullScreen
+//                             loading="lazy"
+//                             aria-label="Google Map of Top Gun Firearms Academy"
+//                             referrerPolicy="no-referrer-when-downgrade"
+//                         />
 
 
 {/* <div className = "landing_information--section" style={{ backgroundColor:"white" }}>
