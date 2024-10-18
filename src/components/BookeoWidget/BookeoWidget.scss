@@ -1,0 +1,8 @@
+#bookeo-widget-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    overflow: hidden; /* Ensure the iframe doesn’t overflow */
+    margin: 0 auto; /* Center the container */
+  }

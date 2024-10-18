@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import './BookeoWidget.scss';
 
 const BookeoWidget = () => {
   useEffect(() => {
@@ -13,20 +14,25 @@ const BookeoWidget = () => {
       script.onload = () => {
         console.log("Bookeo widget script loaded");
 
-        // Polling mechanism to continuously check if iframe is injected
         const intervalId = setInterval(() => {
-          const iframe = document.getElementById("easyXDM_axiomct_project_default5203_provider"); // Target the specific iframe by ID
+          const iframe = document.getElementById("easyXDM_axiomct_project_default5203_provider");
           if (iframe) {
-            iframe.style.height = "513px"; // Set the height to 513px
-            console.log("Iframe found and height set");
-            clearInterval(intervalId); // Stop checking once the iframe is found and modified
-          }
-        }, 500); // Check every 500ms
+            iframe.style.height = "513px";
+            iframe.style.width = "100%";
+            iframe.style.maxWidth = "100%";
+            iframe.style.position = "relative";
+            iframe.style.zIndex = "1";
+            iframe.style.maxHeight = "unset";
+            iframe.style.maxWidth = "unset";
+            console.log("iframe found and styles applied");
 
-        // Timeout in case the iframe never appears (avoid polling forever)
+            clearInterval(intervalId);
+          }
+        }, 500);
+
         setTimeout(() => {
           clearInterval(intervalId);
-        }, 10000); // Stop polling after 10 seconds
+        }, 10000);
       };
 
       document.body.appendChild(script);
@@ -43,9 +49,11 @@ const BookeoWidget = () => {
   }, []);
 
   return (
-    <div>
-      {/* Placeholder for the widget */}
-      <div id="bookeo-widget"></div>
+    <div style={{ padding: '1.25rem 0', marginBottom: '1.25rem' }}>
+      {/* Container to hold the widget */}
+      <div id="bookeo-widget-container">
+        <div id="bookeo-widget"></div>
+      </div>
     </div>
   );
 };

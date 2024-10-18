@@ -135,11 +135,14 @@ const HomePage = () =>{
             </motion.div>
 
             <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ scale: 0.60, opacity: 1, y: 0 }} transition={{ duration: 1 }} viewport={{ once: false }} layout>
-                <div className = "fact-single-td">
+                <div className="fact-single-td">
                     Ready to register? Check out our dates and book your spot now:
                 </div>
             </motion.div>
-            <div>
+
+            {/* Updated BookeoWidget Container */}
+            <div className="bookeo-widget-container" style={{ margin: '50px 0', padding: '20px 0', textAlign: 'center' }}>
+                Widget loaded in frame
                 <BookeoWidget />
             </div>
 
