@@ -1,0 +1,91 @@
+
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+div a{
+    text-decoration: none;
+    color: $primary-green;
+    font-size: 1rem;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom:2rem;
+
+    @include tablet{
+        flex-direction: row;
+        padding-top:13rem;
+        justify-content: space-around;
+        align-content:center;
+        padding-bottom: 7.5rem;
+    }
+
+    &_content{
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    &_block{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 1rem;
+
+        div ul{
+            padding-left: 0rem;
+        }
+
+        div ul li{
+            list-style-type: none;
+            font-size: 1rem;
+            font-family: "roboto-regular";
+            color: $primary-green;
+        }
+    }
+
+    &_icon{
+        height: 2rem;
+        padding-right: 1rem;
+    }
+
+    &_header{
+        font-family: "roboto-slab";
+        font-size: 2.5rem;
+        color: $primary-green;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        @include tablet{
+            margin-top: 0rem;
+            font-size: 3rem;
+        }
+    }
+
+    &_map{
+        width:600;
+        height:450;
+        border: 0;
+
+        &-mobile{
+            @include tablet{
+                display: none
+            }
+        }
+
+        &-td{
+            @include mobile{
+                display: none;
+                height: 20rem;
+            }
+        }
+    }
+
+}

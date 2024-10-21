@@ -24,7 +24,7 @@ const BookeoWidget = () => {
             iframe.style.zIndex = "1";
             iframe.style.maxHeight = "unset";
             iframe.style.maxWidth = "unset";
-            console.log("iframe found and styles applied");
+            iframe.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-popups allow-forms');            console.log("iframe found and styles applied");
 
             clearInterval(intervalId);
           }

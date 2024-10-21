@@ -28,7 +28,7 @@ const Footer = () =>{
                         </ul>
                     </div>
                 </div>
-                <img style={{height:"8rem", width:"auto"}} src={CompanyLogoMountainMobile}/>
+                <img className = "footer_logo" style={{height:"8rem", width:"auto"}} src={CompanyLogoMountainMobile}/>
 
             </div>
     )

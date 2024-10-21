@@ -1,6 +1,15 @@
 
 #root {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   font-family: "Urbanist", sans-serif;
+}
+
+#bookeo_position{
+  clear: both;
+  width: 100%;
+
+  @media (max-width: 1279px) {
+    display: none; /* Hide on mobile and tablet */
+  }
 }

@@ -1,8 +1,24 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+
 #bookeo-widget-container {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    text-align: center;
-    overflow: hidden; /* Ensure the iframe doesn’t overflow */
-    margin: 0 auto; /* Center the container */
+  display: none;
+    @include desktop{
+      display: block;
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+      overflow: hidden; /* Ensure the iframe doesn’t overflow */
+      margin: 0 auto; /* Center the container */
+      }
+  }
+
+#bookeo-widget {
+  display: none;
+    @include tablet{
+      display: flex;
+      }
   }

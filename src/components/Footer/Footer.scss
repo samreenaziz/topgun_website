@@ -15,16 +15,33 @@
     text-align: center;
     padding-top:1rem;
     align-items:center;
+    position: relative;
+    margin-bottom: -0.5rem;
+
 
     @include tablet{
         display: flex;
         padding-left: 3rem;
         flex-direction: row;
+        position: relative;
     }
 
     @include desktop{
         display: flex;
         flex-direction: row;
+        position: relative;
+        bottom: -63rem;
+    }
+
+    &_logo{
+        height: 8rem;
+        width: auto;
+
+        @include tablet{
+            padding-right: 1rem;
+            margin-bottom: 2rem;
+        }
+
     }
 
     &-block{
