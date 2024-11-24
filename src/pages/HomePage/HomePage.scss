@@ -180,7 +180,10 @@ main{
         font-family: "roboto-regular";
         font-weight: 700;
         text-align: justify;
-        line-height: 1.75rem;
+        line-height: 1.90rem;
+        @include tablet{
+            font-size: 1.50rem;
+        }
 
         &--side-note{
             font-family: "roboto-regular";
@@ -189,6 +192,9 @@ main{
             border-left: 2px solid black;
             padding-left: 1rem;
             text-align: justify;
+            @include tablet{
+                font-size: 1.25rem;
+            }
 
         }
     }
