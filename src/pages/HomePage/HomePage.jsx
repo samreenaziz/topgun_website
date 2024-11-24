@@ -133,10 +133,10 @@ const HomePage = () =>{
                             backContent={<p>The program equips participants with essential knowledge of the natural world, fostering responsible and informed hunting practices.</p>}
                         />
 
-                        <CardFlip
+                        {/* <CardFlip
                             frontContent={<p>Firearms Safety Integration</p>}
                             backContent={<p>The program equips participants with essential knowledge of the natural world, fostering responsible and informed hunting practices.</p>}
-                        />
+                        /> */}
 
                         <CardFlip
                             frontContent={<p>Mandatory for All New Hunters</p>}
@@ -158,9 +158,9 @@ const HomePage = () =>{
                 </div>
                 <li><strong style={{fontFamily:"roboto-slab", color: "#2f4f4f"}}>Course guaranteed even with just 1 participant</strong> – No cancellations, we’re here for you!</li>
                 <li><strong style={{fontFamily:"roboto-slab", color: "#2f4f4f"}}>Government ID required (Driver's License, Passport, etc.)</strong> – Bring your valid ID for smooth entry.</li>
-                <li><strong style={{fontFamily:"roboto-slab", color: "#2f4f4f"}}>Text to confirm availability</strong> – Quick and easy, all pre-class communication happens via text! <strong>(416) 720-7858 (Text Only)</strong></li>
+                <li><strong style={{fontFamily:"roboto-slab", color: "#2f4f4f"}}>Text to confirm availability</strong> – Quick and easy, all pre-class communication happens via text at <strong>(416) 720-7858 (TEXT Only)</strong></li>
                 <li><strong style={{fontFamily:"roboto-slab", color: "#2f4f4f"}}>Non-refundable payments</strong> – Once you're in, you’re committed! Fees are non-refundable for cancellations, missed dates, or late arrivals.</li>
-                <li><strong style={{fontFamily:"roboto-slab", color: "#2f4f4f"}}>Rescheduled, not refunded, if government cancels</strong> – We’ll work with you to find a new date if any government regulations affect the course.</li>
+                <li><strong style={{fontFamily:"roboto-slab", color: "#2f4f4f"}}>Rescheduled - not refunded - if government cancels</strong> – We’ll work with you to find a new date if any government regulations affect the course.</li>
                 <li><strong style={{fontFamily:"roboto-slab", color: "#2f4f4f"}}>Easy sign-up</strong> – Check upcoming dates and book courses directly online, or email/text for assistance!</li>
                 <li><strong style={{fontFamily:"roboto-slab", color: "#2f4f4f"}}>Continually adding new courses</strong> – If the current dates don’t work, reach out to find a time that fits your schedule.</li>
             </ul>

@@ -11,7 +11,7 @@ const Footer = () =>{
                     </div>
                     <div className = "footer-subheading">
                         <ul>
-                            <li>1139 Morningside Ave, #39</li>
+                            <li>1139 Morningside Ave, Unit #39</li>
                             <li>Scarborough, Ontario</li>
                             <li>M1B 0A7</li>
                         </ul>
@@ -21,12 +21,16 @@ const Footer = () =>{
                     <div className = "footer-heading">
                         Contact
                     </div>
-                    <div className = "footer-subheading">
-                        <ul>
-                            <li>safetycourse@hotmail.com</li>
-                            <li>+1 (416) 704-3346</li>
-                        </ul>
-                    </div>
+                    <div className="footer-subheading">
+                    <ul>
+                        <li style={{lineHeight: "1rem"}}>
+                            <a style={{textDecoration: "none", color:"white", fontSize: "0.75rem"}} href="mailto:safetycourse@hotmail.com">safetycourse@hotmail.com</a>
+                        </li>
+                        <li style={{lineHeight: "1rem"}}>
+                            <a style={{textDecoration: "none", color:"white", fontSize: "0.75rem"}} href="sms:+14167207858">+1 (416) 720-7858</a>
+                        </li>
+                    </ul>
+                </div>
                 </div>
                 <img className = "footer_logo" style={{height:"8rem", width:"auto"}} src={CompanyLogoMountainMobile}/>
 
