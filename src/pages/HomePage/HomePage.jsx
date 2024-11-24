@@ -60,7 +60,7 @@ const HomePage = () =>{
 
                         <p className = "landing_intro-para">
                         We are an official provider designated by the Chief Firearms Office (CFO)
-                        to teach and examine the <b className = "landing_intro--para">Canadian Firearm Safety Course (CFSC)</b>
+                        to teach and examine the <b className = "landing_intro--para">Canadian Firearm Safety Course (CFSC) </b>
                          for <u>Non-Restricted Firearms</u> and the <b>Canadian Restricted Firearms Safety Course (CRFSC) </b> for <u>Restricted Firearms</u>.
                         </p>
 
@@ -75,7 +75,7 @@ const HomePage = () =>{
                         <p className = "landing_intro-para">
                             In addition, we are authorized by the Ministry of Natural Resources and Forestry,
                             in partnership with the Ontario Federation of Anglers and Hunters (OFAH),
-                            to provide <a href="#about-ohep" style={{ fontWeight: 'bold', textDecoration: 'none' }}>Ontario’s Hunter Education Program (OHEP)</a> across the province.
+                            to provide <a href="#about-ohep" style={{ fontWeight: 'bold', fontStyle:"italic", fontSize:"20px", textDecoration: 'none' }}>Ontario’s Hunter Education Program (OHEP)</a> across the province.
                             This program is designed to help you develop an understanding of the natural
                             world and become a knowledgeable and responsible hunter.
                         </p>
