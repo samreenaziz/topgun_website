@@ -59,7 +59,7 @@ const HomePage = () =>{
                     <div className = "landing_information--section-content">
 
                         <p className = "landing_intro-para">
-                        Located in Scarborough, Ontario at Morningside & Sheppard, we are an official provider designated by the Chief Firearms Office (CFO)
+                        We are an official provider designated by the Chief Firearms Office (CFO)
                         to teach and examine the <b className = "landing_intro--para">Canadian Firearm Safety Course (CFSC)</b>
                         for <u>Non-Restricted Firearms</u> and the <b>Canadian Restricted Firearms Safety Course (CRFSC) </b> for <u>Restricted Firearms</u>.
                         </p>
@@ -161,7 +161,7 @@ const HomePage = () =>{
                 <li><strong style={{fontFamily:"roboto-slab", color: "#2f4f4f"}}>Text to confirm availability</strong> – Quick and easy, all pre-class communication happens via text! <strong>(416) 720-7858 (Text Only)</strong></li>
                 <li><strong style={{fontFamily:"roboto-slab", color: "#2f4f4f"}}>Non-refundable payments</strong> – Once you're in, you’re committed! Fees are non-refundable for cancellations, missed dates, or late arrivals.</li>
                 <li><strong style={{fontFamily:"roboto-slab", color: "#2f4f4f"}}>Rescheduled, not refunded, if government cancels</strong> – We’ll work with you to find a new date if any government regulations affect the course.</li>
-                <li><strong style={{fontFamily:"roboto-slab", color: "#2f4f4f"}}>Easy sign-up</strong> – Check upcoming dates and book courses directly online, or email/call for assistance!</li>
+                <li><strong style={{fontFamily:"roboto-slab", color: "#2f4f4f"}}>Easy sign-up</strong> – Check upcoming dates and book courses directly online, or email/text for assistance!</li>
                 <li><strong style={{fontFamily:"roboto-slab", color: "#2f4f4f"}}>Continually adding new courses</strong> – If the current dates don’t work, reach out to find a time that fits your schedule.</li>
             </ul>
 
